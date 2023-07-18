@@ -1,0 +1,184 @@
+<html lang="zh-CN">
+    <head>
+        <title>电子木鱼:猪圈-使用LIGHTTPD能启猪运营</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script> 
+        <meta name="description" content="小猪漫画的猪圈">
+    </head>
+ <body>
+    <!--导航栏-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h3>猪圈</h3> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://nqhyee.vsc.icu/">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&小游戏</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+        <h1 class="text-center">电子木鱼<h1>
+        <div class="muyu-layout">
+         <div id="jishu-box">
+             <p id="jishu">功德：0</p>
+         </div>
+        <div id="muyu-box">
+            <p id="gongde">功德+1</p>
+            <img id="muyu" class="no-lightbox entered loaded" src="data:image/png;base64,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">
+        </div>
+    </div>
+  <style>
+    .muyu-layout {
+        background: black;
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        justify-content: center;
+        height: 90vh;
+        align-items: center;
+    }
+    #muyu-box img {
+        width: 250px;
+    }
+     #jishu-box{
+        top: 55px;
+        position: absolute;
+     }
+    #muyu-box p {
+        color: white;
+        opacity: 0;
+        font-size: 25px;
+    }
+    #jishu-box p {
+        color: white;
+        font-size: 30px;
+    }
+  </style>
+       <script>
+          var gongde = document.getElementById("gongde");
+          var muyu = document.getElementById("muyu");
+          var jishu = document.getElementById("jishu-box");
+          var mp3Url = "/music/muyu.mp3";
+          var player = new Audio(mp3Url);
+          var num = 0;
+          muyu.addEventListener("click", function () {
+            num+=1;
+            player.load();
+            player.play();
+            muyu.animate([{ transform: 'scale(0.85)' }, { transform: 'scale(1.03)' }, { transform: 'scale(1)' }], 500);
+            gongde.animate([{ opacity: 0, transform: 'translateY(0)' },{ opacity: 0.3, transform: 'translateY(-10px)' },{ opacity: 0.8, transform: 'translateY(-20px)' }, { opacity: 1, transform: 'translateY(-30px)' }, { opacity: 0.8, transform: 'translateY(-35px)' }, { opacity: 0, transform: 'translateY(-40px)' }], 600);
+            jishu.innerHTML = "<p id='jishu'>功德："+num+"</p>";
+          });
+       </script>
+        <!--页脚-->
+<script>
+(() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+</script>
+</br>
+ <div class="mt-5 p-4 bg-dark text-white text-center">
+ <span id="runtime_span"></span>
+ <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
+ Date("6/5/2023 0:00:00");
+ Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+ a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
+ runtime_span.innerHTML="本站勉强运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();</script>
+ <img href="https://cdnjson.com/image/GKLUD"><img src="https://cdnjson.com/images/2023/06/24/icon.th.png" alt="icon.png" border="0" /></img>
+ <h5>由ksweb强力驱动</h5>
+ <p>能启猪负责运营</p>
+ <div class="btn-group">
+  <a href="https://nqhyee.vsc.icu/sitemap.xml" class="btn btn-warning">网站地图查看
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-2" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+   </svg>
+  </a>
+  <a href="https://www.lkdns.top" class="btn btn-primary">域名由灵空提供
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+   </svg>
+  </a>
+ </div>
+</body>
+</html>
+          
