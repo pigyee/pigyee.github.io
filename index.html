@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script> 
+        <link href="https://cdn.staticfile.org/video.js/8.6.1/alt/video-js-cdn.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/video.js/8.6.1/alt/video.core.min.js"></script>        
         <script>
                (() => {
           'use strict'
@@ -120,6 +122,44 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" /></svg> 
            </a> 
         </div>
+        <!-- 模态框 -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+         	<!-- 模态框头部 -->
+            <div class="modal-header">
+              <h4 class="modal-title">提示</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+           </div>
+      
+           <!-- 模态框主体 -->
+           <div class="modal-body">
+             要期中考试了，能启猪寄
+           </div>
+      
+         	<!-- 模态框底部 -->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">滚</button>             
+           </div>
+          </div>
+        </div>
+    </div>
+
+        <script>
+          window.onload = function() {
+          // 获取模态框元素
+          var modal = document.getElementById('myModal');
+    
+           // 创建模态框对象
+           var myModal = new bootstrap.Modal(modal, {
+           keyboard: false
+           });
+    
+          // 显示模态框
+         myModal.show();
+          }
+        </script>
+
         <div class="container-fluid bg-primary text-center rounded">                                                                    
           <h4 class="text-center text-white">请收藏我们的网址</h4>
           <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -190,6 +230,19 @@
             <div class="card-body">
                 使用沼气电池的手表，699大洋
             </div>
+            <div class="text-center">
+              <video
+                 id="vid1"
+                 class="video-js"
+                 controls
+                 preload="auto"    
+                 data-setup='{}'>
+                <source src="http://pancdndx1.muhan.ltd:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzEwLzE3L0hvbW9XYXRjaCAob25saW5lLXZpZGVvLWN1dHRlci5jb20pICgxKS5tcDQ/HomoWatch.mp4?sign=nuJYsUlzXX0lUCs2aV3Pu0Z2d6d_gP9k3R-LK2g2MKw%3D%3A0" type="video/mp4"></source>
+                  <p class="vjs-no-js">
+                      把给我JavaScript开开
+                  </p>
+              </video>
+           </div>
             <a href="https://nqhyee.vsc.icu/homo/臭手表" class="btn btn-primary">阅读</a>        
             <div class="card-footer text-center">
                 2023-9-4
