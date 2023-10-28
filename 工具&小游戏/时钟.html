@@ -1,9 +1,10 @@
 <html lang="zh-CN">
     <head>
-        <meta charset="UTF-8">
+        <title>时钟:猪圈-能启猪运营</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script> <!-- Clarity tracking code for https://nqhyee.vsc.icu/ -->
         <meta name="description" content="小猪漫画的猪圈">
         <script>
                (() => {
@@ -81,23 +82,6 @@
           })
          })()  
         </script>  
-        <title>复选框画板:猪圈-能启猪运营</title>
-        <style>
-        .checkbox-grid {
-            display: grid;
-            grid-template-columns: repeat(16, 1fr); /* 将画板划分为16列 */
-            gap: 0.2rem;
-            margin-top: 2rem;
-        }
-
-        .checkbox-grid .form-check-input {
-            padding: 0;
-        }
-
-        .checkbox-grid .form-check-input:checked {
-            background-color: black; /* 选中的复选框将被填充为黑色，表示画笔 */
-        }
-    </style>
     </head>
     <body>
     <!--导航栏-->
@@ -106,7 +90,7 @@
                 <a class="navbar-brand" href="#">
                   <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top">
                   猪圈
-                </a>  
+                </a>                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -120,34 +104,10 @@
                     </ul>
                 </div>
             </div>
-        </nav>   
-        <div class="container">
-            <h1>复选框画板</h1>
-            <div class="checkbox-grid" id="checkboxGrid">
-                <!-- JavaScript将在这里插入复选框 -->
-            </div>
-        </div>
-        <script>
-        var checkboxGrid = document.getElementById('checkboxGrid');
-        for (var i = 0; i < 256; i++) {
-            var checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-    
-            checkbox.addEventListener('change', function() {
-                if (this.checked) {
-                    this.setAttribute('checked', 'checked');
-                } else {
-                    this.removeAttribute('checked');
-                }
-            });
-    
-            checkboxGrid.appendChild(checkbox);
-        }
-    </script> <br> <a href="#" class="btn btn-outline-success">回到顶部 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewbox="0 0 16 16"><path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
-            </svg> </a> <a href="https://nqhyee.vsc.icu/源码.tar.gz" class="btn btn-outline-info">下载源代码 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewbox="0 0 16 16"><path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-            </svg> </a> <br> 
+        </nav>
+
+        <a href="https://httishere.gitee.io/notion/v220/rotate-clock.html?e=tk4/KPuobGjA8jIZE4Ll6fv4PqoNjJnow8fxH7gtkMdwgHP+KSWmo5Cj9NJeqFCii/R5R1sdlQIXg6g0fOqzQA==" class="btn btn-primary">全屏</a>
+        <iframe src="https://httishere.gitee.io/notion/v220/rotate-clock.html?e=tk4/KPuobGjA8jIZE4Ll6fv4PqoNjJnow8fxH7gtkMdwgHP+KSWmo5Cj9NJeqFCii/R5R1sdlQIXg6g0fOqzQA==" frameborder="0" width="100%" height="100%"></iframe>                             
              <!--页脚--> 
         <div class="mt-5 p-4 bg-dark text-white text-center"><span id="runtime_span"></span>
             <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
@@ -169,4 +129,4 @@
           </div>
         </div>        
     </body>
-</html>
+</html>        
