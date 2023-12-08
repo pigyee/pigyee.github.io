@@ -11,7 +11,7 @@
         <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
         <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.css" rel="stylesheet">
         <script src="/dark.js"></script>
-        <!-- Clarity tracking code for / -->
+        <!-- Clarity tracking code for https://nqhyee.vsc.icu/ -->
         <script>
          (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -53,56 +53,56 @@
                          </ul>
                           <!-- JavaScript 代码 -->
                           <script>
-                              const searchInput = document.getElementById('searchInput');
-                              const searchResultsContainer = document.querySelector('.searchResults');
+                          const searchInput = document.getElementById('searchInput');
+     const searchResultsContainer = document.querySelector('.searchResults');
 
-                              searchInput.addEventListener('input', function () {
-                                const searchKeyword = this.value.toLowerCase();
+     searchInput.addEventListener('input', function () {
+         const searchKeyword = this.value.toLowerCase();
 
-                               // 清空之前的搜索结果
-                               searchResultsContainer.innerHTML = '';
+         // 清空之前的搜索结果
+         searchResultsContainer.innerHTML = '';
 
-                               if (searchKeyword.trim() === '') {
-                               // 如果搜索关键字为空，隐藏弹窗并返回
-                               searchResultsContainer.style.display = 'none';
-                                  return;
-                               }
+         if (searchKeyword.trim() === '') {
+             // 如果搜索关键字为空，隐藏弹窗并返回
+             searchResultsContainer.style.display = 'none';
+             return;
+         }
 
-                              fetch('/search.xml')
-                               .then(response => response.text())
-                                 .then(data => {
-                                  const parser = new DOMParser();
-                                     const xmlDoc = parser.parseFromString(data, 'application/xml');
-                                           const links = xmlDoc.querySelectorAll('link');
+         fetch('/search.xml')
+             .then(response => response.text())
+             .then(data => {
+                 const parser = new DOMParser();
+                 const xmlDoc = parser.parseFromString(data, 'application/xml');
+                 const links = xmlDoc.querySelectorAll('link');
 
-                                   let hasResults = false;
+                 let hasResults = false;
 
-                                  links.forEach(link => {
-                                   const url = link.querySelector('url').textContent.toLowerCase();
-                                const title = link.querySelector('title').textContent.toLowerCase();
-        
-                                   if (title.includes(searchKeyword) || url.includes(searchKeyword)) {
-                                       const li = document.createElement('li');
-                                       li.className = 'aurl';
-                                       li.innerHTML = `<a href="${url}" data-lastfrom="" title="${title}">${title}</a>`;
-                                       searchResultsContainer.appendChild(li);
-                                       hasResults = true;
-                                    }
-                                   });
+                 links.forEach(link => {
+                     const url = link.querySelector('url').textContent.toLowerCase();
+                     const title = link.querySelector('title').textContent.toLowerCase();
 
-                                 // 根据搜索结果显示或隐藏弹窗
-                                    searchResultsContainer.style.display = hasResults ? 'block' : 'none';
-                                 })
-                                  .catch(error => console.error('Error fetching XML:', error));
-                                });
+                     if (title.includes(searchKeyword) || url.includes(searchKeyword)) {
+                         const li = document.createElement('li');
+                         li.className = 'aurl';
+                         li.innerHTML = `<a href="${url}" data-lastfrom="" title="${title}">${title}</a>`;
+                         searchResultsContainer.appendChild(li);
+                         hasResults = true;
+                     }
+                 });
 
-                                // 监听输入框失去焦点事件，隐藏搜索结果弹窗
-                                searchInput.addEventListener('blur', function () {
-                                  // 使用 setTimeout 确保点击搜索结果时能触发链接
-                                 setTimeout(() => {
-                                 searchResultsContainer.style.display = 'none';
-                              }, 200);
-                          });
+                 // 根据搜索结果显示或隐藏弹窗
+                 searchResultsContainer.style.display = hasResults ? 'block' : 'none';
+             })
+             .catch(error => console.error('Error fetching XML:', error));
+     });
+
+     // 监听输入框失去焦点事件，隐藏搜索结果弹窗
+     searchInput.addEventListener('blur', function () {
+         // 使用 setTimeout 确保点击搜索结果时能触发链接
+         setTimeout(() => {
+             searchResultsContainer.style.display = 'none';
+         }, 200);
+     });
                           </script>                            
                     </ul>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="container-fluid bg-primary text-center rounded animate__animated animate__bounceInDown">
                   <h4 class="text-center text-white">请收藏我们的网址</h4>
                   <i class="bi bi-star"></i>  
-                  <p class="text-center text-white">nqhyee.vsc.icu</p>
+                  <p class="text-center text-white">nqhyee.vsc.icu<br>nqhyee.vsc.icu喜提GFW</p>
                 </div> <br>
                 <!-- 列表 -->
                 <ul class="list-group animate__animated animate__fadeInLeftBig">
@@ -146,26 +146,25 @@
                       <i class="bi bi-journal-text"></i>
                     </a>
                   </div> 
-                    <!--语录-->
-                    <div id="menu2" class="container tab-pane fade"><br>
-                      <h3>语录</h3>
-                      <h1>出去！</h1> 
-                      <a href="/核导弹" class="btn btn-primary">何导弹</a> 
-                      <a href="/烧饼" class="btn btn-primary">郑烧饼</a> 
-                      <div id="menu1" class="container tab-pane fade"></div>
-                    </div>
-                </div>
-                <div id="menu3" class="container tab-pane fade"><br>
-                      <h3>张翠花僵尸漫画</h3>
-                      <h1>好康，字不好康</h1> 
-                      <a href="/张翠花小说/僵尸.html" class="btn btn-primary">阅读
-                        <i class="bi bi-journal-text"></i>
-                      </a> 
-                      <div id="menu1" class="container tab-pane fade"></div>
-                    </div>
+                  <!--语录-->
+                  <div id="menu2" class="container tab-pane fade"><br>
+                    <h3>语录</h3>
+                    <h1>出去！</h1> 
+                    <a href="/核导弹" class="btn btn-primary">何导弹</a> 
+                    <a href="/烧饼" class="btn btn-primary">郑烧饼</a> 
+                    <div id="menu1" class="container tab-pane fade"></div>
+                  </div>             
+                  <div id="menu3" class="container tab-pane fade"><br>
+                    <h3>张翠花僵尸漫画</h3>
+                    <h1>好康，字不好康</h1> 
+                    <a href="/张翠花小说/僵尸.html" class="btn btn-primary">阅读
+                      <i class="bi bi-journal-text"></i>
+                    </a> 
+                    <div id="menu1" class="container tab-pane fade"></div>
+                  </div>
                 </div>
                 <br> <br>
-            </div> 
+            </div>                  
             <!--卡片-->
             <div class="animate__animated animate__fadeInLeftBig col-md">
               <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
@@ -212,7 +211,7 @@
                         <h5 class="card-header text-center">猪圈V2版本升级列表</h5>
                         <div class="card-body">
                             更改内容一大堆
-                        </div> <a href="/日志/猪圈V2更改" class="btn btn-primary">阅读</a>
+                        </div> <a href="https://nqhyee.vsc.icu/日志/猪圈V2更改" class="btn btn-primary">阅读</a>
                         <div class="card-footer text-center">
                             2023-6-29
                         </div>
@@ -222,7 +221,7 @@
                         <div class="card-body">
                             cdn.jsdelivr.net炸了，被墙了
                         </div> 
-                        <a href="/日志/更换前端库" class="btn btn-primary">阅读 </a>
+                        <a href="https://nqhyee.vsc.icu/日志/更换前端库" class="btn btn-primary">阅读 </a>
                         <div class="card-footer text-center">
                             2023-6-22
                         </div>
@@ -244,10 +243,10 @@
               <h4>由4EVERLAND托管</h4>
               <p>能启猪负责运营</p>
               <div class="btn-group">
-                <a href="/sitemap.xml" class="btn btn-warning">网站地图查看 
+                <a href="https://nqhyee.vsc.icu/sitemap.xml" class="btn btn-warning">网站地图查看 
                   <i class="bi bi-diagram-2"></i> 
                 </a> 
-                <a href="https://www.lkdns.top" class="btn btn-primary">域名由灵空提供 
+                <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供 
                   <i class="bi bi-globe"></i>
                 </a>
               </div>
