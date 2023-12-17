@@ -34,18 +34,31 @@
             list-style-type: none;
         }
         body {
-          background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);       
-          filter: drop-shadow(0 0 10px white);
+          background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); 
+          filter: drop-shadow(0 0 5px white);
         }
-
-    </style>
+        .searchResults {
+            position: absolute;
+            top: 60px; /* 调整弹窗的垂直位置 */
+            left: 10px;
+            z-index: 999; /* 确保弹窗在最上层 */
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none;
+        }
+    </style>     
     <meta name="description" content="欢迎来到能启猪的个人网站！我是sb，对于各种创意和技术充满了热情。这个网站是我展示自己创造力和分享各种有趣的内容的地方。除了个人作品，此外，我还会在我的博客中分享一些我个人生活的点滴和经历。我相信生活的每一个瞬间都是值得记录和分享的，我希望通过我的博客能够与大家建立更加深入的连接。感谢你来到我的网站，希望你能够在这里找到你感兴趣的内容，并且享受浏览我的作品所带来的乐趣。如果你有任何问题或者想法，欢迎与我联系。邮箱：pig810@outlook.com让我们一起创造并分享美好的事物！">
 </head>
 
 <body>
     <!--导航栏-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid d-flex"><a class="navbar-brand" href="#"> <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈 </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="container-fluid d-flex"><a class="navbar-brand" href="#">
+          <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
@@ -64,7 +77,7 @@
                         <!-- 搜索结果将会动态加载到这里 -->
                     </ul>
                     <!-- JavaScript 代码 -->
-                    <script src="https://nqh.ds666.top/search.js"></script>
+                    <script src="/search.js"></script>
                 </ul>
             </div>
         </div>
@@ -127,22 +140,18 @@
             <br> <br>
         </div>
         <!--卡片-->
-        <div class="animate__animated animate__fadeInLeftBig col-md">
+        <div class="col-md">
             <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                 <div class="card col-md p-3 my-3">
-                    <div class="card-body text-center">
-                        <video id="my-player" class="video-js" controls preload="auto" data-setup="{}">
-                            <source src="http://pancdndx1.muhan.ltd:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzExLzA2L3N0dWRpb192aWRlb18xNjk5MTQzMTI3MjE1Lm1wNA/studio_video_1699143127215.mp4?sign=oFCbIKo9MF9rmpJGOysuHAs2AjEK3T1XK3Wp7oGnKrI%3D%3A0" type="video/mp4">
-                            <p class="vjs-no-js">开开js <a href="https://videojs.com/html5-video-support/" target="_blank"> supports HTML5 video </a></p>
-                        </video>
+                    <div class="card-body text-center">                           
                     </div> <br>
-                    <h5 class="text-center">屑视频</h5>
+                    <h3 class="text-center" style="font-size:30vw">喜报</h3>
                     <div class="text-center">
-                        魔改班歌
+                        网站修好力！！
                     </div>
                     <hr>
                     <div class="text-center">
-                        2023-11-6
+                        <time>2023-12-16</time>
                         <i class="bi bi-calendar4"></i>
                     </div>
                 </div>
@@ -192,7 +201,7 @@
             <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                 <!-- 联系方式 -->
                 <h4 class="text-center display-4">联系我们</h4>
-                <img class="img-fluid" src="https://cdnjson.com/images/2023/09/05/-2023-09-05-20.46_1_edit_4059801933233.jpg" alt="-2023-09-05-20.46_1_edit_4059801933233.jpg" border="0">
+                <img loading="lazy" class="img-fluid" src="https://cdnjson.com/images/2023/09/05/-2023-09-05-20.46_1_edit_4059801933233.jpg" alt="-2023-09-05-20.46_1_edit_4059801933233.jpg" border="0">
             </div>
         </div>
     </div>
@@ -205,7 +214,7 @@
         <h4>由4EVERLAND托管</h4>
         <p>能启猪负责运营</p>
         <div class="btn-group">
-            <a href="https://nqhyee.vsc.icu/sitemap.xml" class="btn btn-warning">网站地图查看
+            <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
                 <i class="bi bi-diagram-2"></i>
             </a>
             <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供
