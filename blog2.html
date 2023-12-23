@@ -1,145 +1,403 @@
 <html lang="zh-CN">
-
-<head>
-    <title>文章:猪圈-能启猪运营</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css" rel="stylesheet">
-    <meta name="description" content="小猪的博客-邮箱：pig810@outlook.com">
-    <script src="/dark.js"></script>
-    <script src="/view-image.min (1).js"></script>
-    <script>
-        window.ViewImage && ViewImage.init('.img-fluid');
-    </script>
-    <style>
-        .p {
-            border-left: 9px solid #4169E1;
-            background-color: #87CEFA;
+    <head>
+        <title>文章:猪圈-能启猪运营</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+        <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+        <meta name="description" content="小猪的博客-邮箱：pig810@outlook.com">        
+        <script src="/dark.js"></script>  
+        <script src="/view-image.min (1).js"></script>
+        <script>
+           window.ViewImage && ViewImage.init('.img-fluid');
+        </script>
+        <style>
+          .p
+          {
+            border-left:9px solid #4169E1;
+            background-color:#87CEFA;
             padding: 15px;
-        }
-
-        .tab-content {
-            margin: 30px;
-        }
-    </style>
-</head>
-
-<body><!--导航栏-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈 </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&amp;小游戏</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
-                    <form>
-                        <input class="form-control" type="text" id="searchInput" placeholder="搜索">
-                    </form>
-                    <!-- 搜索结果 -->
-                    <br>
-                    <ul class="searchResults bg-light rounded fixed-top">
-                        <!-- 搜索结果将会动态加载到这里 -->
+          }
+          .tab-content{margin: 30px;}
+        </style>         
+    </head>
+    <body><!--导航栏-->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈 </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&amp;小游戏</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
                     </ul>
-                    <!-- JavaScript 代码 -->
-                    <script src="/search.js"></script>
-                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="app"></div>
-    <div class="m-3">
-        <h1 class="text-center">小猪的blog</h1>
-        <h6 class="display-6 text-center">最近文章</h6>
+        </nav>
+        <div class="app"></div>
+        <h1 class="text-center">小猪的blog</h1>         
+        <h6 class="display-6 text-center">最近文章</h6> 
         <div class="text-center p text-dark">
-            <script>
-                var strArry = new Array("出去！", "王六童，你手揍什么的", "我看你要上天", "猴子分桃，桃子分猴", "你用脚趾头仔细想一想，是那样画的吗？", "你给我上后面站着去", "哎呀，我去", "唉", "画图不用尺子懒死了你就");
-                var adv;
-                adv = strArry[parseInt(Math.random() * 8)];
-                document.write(adv);
-            </script>
-        </div>
-        <!-- 栏目 -->
+          <script>
+				var strArry=new Array("出去！","王六童，你手揍什么的","我看你要上天","猴子分桃，桃子分猴","你用脚趾头仔细想一想，是那样画的吗？","你给我上后面站着去","哎呀，我去","唉","画图不用尺子懒死了你就");
+				var adv;
+				adv=strArry[parseInt(Math.random()*8)];
+				document.write(adv);
+	      </script>
+	    </div>  
+         <!-- 栏目 -->
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">全部</a></li>
             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#menu3">大杂烩</a></li>
             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#menu1">日志</a></li>
             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#menu2">homo</a></li>
-        </ul>
-    </div>
-    <!--回到顶部-->
-    <div class="fixed-bottom">
-        <a href="#" class="btn btn-primary bth-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewbox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </a>
-    </div>
-    <!--全部-->
-    <div class="tab-content m-2">
-        <div id="home" class="container tab-pane active">
-            <div class="row">
-                <!--魔改班歌-->
-                <div class="shadow-sm p-3 b-3 bg-body-tertiary rounded col-md">
-                    <a>
-                        <h2>魔改班歌</h2>
-                    </a>
-                    <video style="width: 100%; height: auto;" controls>
-                        <source src="https://zsdxjd.muhanpan.com:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzExLzA2L3N0dWRpb192aWRlb18xNjk5MTQzMTI3MjE1Lm1wNA/studio_video_1699143127215.mp4?sign=oFCbIKo9MF9rmpJGOysuHAs2AjEK3T1XK3Wp7oGnKrI%3D%3A0" type="video/mp4">
-                        屑浏览器
-                    </video>
-                    <hr>
-                    <p>
-                        能启猪
-                        <time>2023.11.6</time>
-                    </p>
+        </ul> 
+        <!--回到顶部-->
+        <div class="fixed-bottom">
+          <a href="#" class="btn btn-primary bth-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewbox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+                </svg> 
+          </a>
+        </div>       
+        <!--全部-->        
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+              <div class="row">
+              <!-- 魔改班歌 -->
+                <div class="card col-md m-1 text-center">                
+                    <div class="card-body text-center">                    
+                       <video style="width: 100%; height: auto;" controls>
+                          <source src="https://zsdxjd.muhanpan.com:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzExLzA2L3N0dWRpb192aWRlb18xNjk5MTQzMTI3MjE1Lm1wNA/studio_video_1699143127215.mp4?sign=oFCbIKo9MF9rmpJGOysuHAs2AjEK3T1XK3Wp7oGnKrI%3D%3A0" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                    </div>                                    
+                    <h5 class="text-center">屑视频</h5> 
+                    <div class="text-center">
+                       魔改班歌 
+                    </div>
+                    <hr>                                      
+                    <div class="text-center">
+                        2023-11-6
+                        <i class="bi bi-calendar4"></i>                      
+                    </div>
                 </div>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                <!--11班炸了-->
-                <div class="shadow-sm p-3 b-3 bg-body-tertiary rounded col-md">
-                    <a href="/文章/11班炸药/">
-                        <h2>11班炸了</h2>
-                        <h5>11班在教室里玩炸药，现在被开除了罢</h5>
-                    </a>
+                 
+                <!--11班炸了-->                                                       
+                <div class="card col-md text-center m-1">
+                    <img class="img-fluid rounded" src="https://z1.ax1x.com/2023/11/06/pil02eU.md.jpg" alt="pil02eU.jpg" border="0" />
+                    <h5 class="text-center">11班玩炸药</h5>                
+                    <div class="card-body">
+                        <div class="text-center">
+                            11班炸了
+                        </div>                    
+                    </div>
                     <hr>
-                    <p>
-                        能启猪
-                        <time>2023.11.6</time>
-                    </p>
+                    <div class="d-grid">
+                      <a href="/文章/11班炸药/" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class=" text-center">
+                        2023-11-4
+                        <i class="bi bi-calendar4"></i>                      
+                    </div>
+                </div>  
+                
+              <!--安卓浏览器-->                              
+              <div class="row"> 
+                <div class="card col-md m-1">                
+                    <div class="card-body">                    
+                        <img class="img-fluid rounded" src="https://cdnjson.com/images/2023/10/29/sketch1698577243459.png" alt="sketch1698577243459.png" border="0" />
+                    </div>
+                    <h5 class="text-center">安卓浏览器推荐</h5> 
+                    <div class="text-center">
+                            安卓浏览器，还有文章的新页面！ 
+                    </div>
+                    <hr> 
+                    <div class="d-grid">
+                      <a href="/文章/安卓浏览器/" class="btn btn-primary">阅读</a>
+                    </div>                    
+                    <div class="text-center">
+                        <time>2023-10-27</time>
+                        <i class="bi bi-calendar4"></i>                      
+                    </div>
+                </div>               
+                
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">未来可寄</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            烧饼快气死了，工资怎么这么高，王六童都想糊屎山了
+                        </div> 
+                        <img class="img-fluid rounded" src="https://cdnjson.com/images/2023/10/09/2023_1002_182045.png" alt="2023_1002_182045.png" border="0">
+                    </div>
+                    <div class="d-grid">
+                      <a href="/文章/未来可寄" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <time>2023-10-9</time> 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+              </div>
+              
+              <!--沼气手表-->
+              <div class="row">
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">臭手表（大悲）</h5>
+                    <div class="card-body">
+                        使用沼气电池的手表，699大洋 
+                        <div class="text-center">
+                           <video style="width: 100%; height: auto;" controls>
+                              <source src="https://zsdxjd.muhanpan.com:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzEwLzE3L0hvbW9XYXRjaCAob25saW5lLXZpZGVvLWN1dHRlci5jb20pICgxKS5tcDQ/HomoWatch.mp4?sign=nuJYsUlzXX0lUCs2aV3Pu0Z2d6d_gP9k3R-LK2g2MKw%3D%3A0" type="video/mp4">                              
+                           </video>                             
+                        </div>
+                    </div> 
+                      <a href="/homo/臭手表" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        <time>2023-9-4</time>
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+                
+                <!--能启猪上东兴-->
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">能启猪上东兴</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            盲憨和王六童都上了27
+                        </div>
+                    </div>
+                    <div class="d-grid"><a href="/文章/上东兴的能启猪" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-7-8 
+                        <i class="bi bi-calendar4"></i>                   
+                    </div>                                    
                 </div>
-                <!--大杂烩-->
-                <div id="menu3" class="container tab-pane fade">
-
-
-                    <!--日志-->
-                    <div id="menu1" class="container tab-pane fade">
-
-                        <!--homo-->
-                        <div id="menu2" class="container tab-pane fade">
-
-                            <!--页脚-->
-                            <div class="mt-5 p-4 bg-dark text-white text-center">
-                                <span id="runtime_span"></span>
-                                <script src="/time.js"></script>
-                                <img src="/logo-m.svg" alt="icon" border="0">
-                                <h4>由4EVERLAND托管</h4>
-                                <p>能启猪负责运营</p>
-                                <div class="btn-group">
-                                    <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
-                                        <i class="bi bi-diagram-2"></i>
-                                    </a>
-                                    <a href="https://www.lkdns.top" class="btn btn-primary">域名由灵空提供
-                                        <i class="bi bi-globe"></i>
-                                    </a>
-                                </div>
-                            </div>
-</body>
-
+              </div>
+               
+               <!--没时间维护--> 
+              <div class="row">
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">我emo了</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <a href="https://imgtg.com/image/Ozfmqq"><img src="https://i.imgtg.com/2023/07/16/Ozfmqq.th.webp" alt="Ozfmqq.th.webp" border="0"></a>
+                        </div> mm给我报了一堆辅导班，以后可能没有时间维护了…
+                    </div>
+                    <div class="d-grid">
+                      <a href="/文章/我emo了" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-7-8 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">盲憨把自己压缩了</h5>
+                    <div class="card-body">
+                        QQ浏览器，我做错了什么？ 
+                        <div class="d-grid">
+                          <a href="/文章/盲憨把自己压缩了" class="btn btn-primary">阅读</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-6-18 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>
+              </div> 
+                           
+              <div class="row">
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">猪圈V2版本升级列表</h5>
+                    <div class="card-body">
+                        更改内容一大堆
+                    </div> 
+                    <a href="/日志/猪圈V2更改" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-29
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">更换前端库</h5>
+                    <div class="card-body">
+                        cdn.jsdelivr.net炸了，被墙了
+                    </div>
+                    <a href="/日志/更换前端库" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-22
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>
+              </div> 
+                <div class="card m-1">
+                    <h5 class="card-header text-center">更换证书</h5>
+                    <div class="card-body">
+                        更换SSL证书，抛弃cersign
+                    </div> <a href="/日志/更换证书" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-19
+                    </div>
+                    
+                </div>
+              </div>                         
+            </div>
+            <!--大杂烩-->
+            <div id="menu3" class="container tab-pane fade">
+              <div class="row">
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">安卓浏览器推荐</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            安卓浏览器，还有文章的新页面！
+                            <img class="img-fluid rounded" src="https://cdnjson.com/images/2023/10/29/sketch1698577243459.png" alt="sketch1698577243459.png" border="0" />
+                        </div>
+                    </div>
+                    <div class="d-grid"><a href="/文章/安卓浏览器/" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-10-22 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>               
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">未来可寄</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            烧饼快气死了，工资怎么这么高，王六童都想糊屎山了
+                        </div> 
+                        <img class="img-fluid" src="https://cdnjson.com/images/2023/10/09/2023_1002_182045.png" alt="2023_1002_182045.png" border="0">
+                    </div>
+                    <div class="d-grid"><a href="/文章/未来可寄" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-10-9 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>
+              </div>            
+              
+              <div class="row">
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">能启猪上东兴</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            盲憨和王六童都上了27
+                        </div>
+                    </div>
+                    <div class="d-grid"><a href="/文章/上东兴的能启猪" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-7-8 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewbox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-1 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" /> <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg>
+                    </div>
+                </div> 
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">我emo了</h5>
+                    <div class="card-body">
+                        <div class="text-center">
+                            <a href="https://imgtg.com/image/Ozfmqq"><img src="https://i.imgtg.com/2023/07/16/Ozfmqq.th.webp" alt="Ozfmqq.th.webp" border="0"></a>
+                        </div> mm给我报了一堆辅导班，以后可能没有时间维护了…
+                    </div>
+                    <div class="d-grid"><a href="/文章/我emo了" class="btn btn-primary">阅读</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-7-8 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+              </div>                   
+                <div class="card col-md m-1">
+                    <h5 class="card-header text-center">盲憨把自己压缩了</h5>
+                    <div class="card-body">
+                        QQ浏览器，我做错了什么？ 
+                        <div class="d-grid"><a href="/文章/盲憨把自己压缩了" class="btn btn-primary">阅读</a>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        2023-6-18 
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>
+            </div>
+             <!--日志-->
+            <div id="menu1" class="container tab-pane fade">
+              <div class="row">            
+                <div class="card col-md">
+                    <h5 class="card-header text-center">猪圈V2版本升级列表</h5>
+                    <div class="card-body">
+                        更改内容一大堆
+                    </div> <a href="/日志/猪圈V2更改" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-29
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>                          
+                <div class="card col-md">
+                    <h5 class="card-header text-center">更换前端库</h5>
+                    <div class="card-body">
+                        cdn.jsdelivr.net炸了，被墙了
+                    </div> <a href="/日志/更换前端库" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-22
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+              </div>                                                 
+                <div class="card col-md">
+                    <h5 class="card-header text-center">更换证书</h5>
+                    <div class="card-body">
+                        更换SSL证书，抛弃cersign
+                    </div> <a href="/日志/更换证书" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-6-19
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div> 
+            </div>    
+            <!--homo-->           
+            <div id="menu2" class="container tab-pane fade">
+                <div class="card">
+                    <h5 class="card-header text-center">臭手表（大悲）</h5>
+                    <div class="card-body">
+                        使用沼气电池的手表，699大洋 
+                        <div class="text-center">
+                            <video style="width: 100%; height: auto;" controls>
+                               <source src="https://zsdxjd.muhanpan.com:54689/api/v3/slave/source/0/dXBsb2Fkcy8yMDIzLzEwLzE3L0hvbW9XYXRjaCAob25saW5lLXZpZGVvLWN1dHRlci5jb20pICgxKS5tcDQ/HomoWatch.mp4?sign=nuJYsUlzXX0lUCs2aV3Pu0Z2d6d_gP9k3R-LK2g2MKw%3D%3A0" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <a href="/homo/臭手表" class="btn btn-primary">阅读</a>
+                    <div class="card-footer text-center">
+                        2023-9-4
+                        <i class="bi bi-calendar4"></i>
+                    </div>
+                </div>              
+            </div>
+        </div>                 
+            <!--页脚-->
+            <div class="mt-5 p-4 bg-dark text-white text-center">
+            <span id="runtime_span"></span>
+              <script src="/time.js"></script> 
+              <img src="/logo-m.svg" alt="icon" border="0">
+              <h4>由4EVERLAND托管</h4>
+              <p>能启猪负责运营</p>
+              <div class="btn-group">
+                <a href="/sitemap.xml" class="btn btn-warning">网站地图查看 
+                  <i class="bi bi-diagram-2"></i> 
+                </a> 
+                <a href="https://www.lkdns.top" class="btn btn-primary">域名由灵空提供 
+                  <i class="bi bi-globe"></i>
+                </a>
+              </div>
+            </div>        
+    </body>
 </html>
