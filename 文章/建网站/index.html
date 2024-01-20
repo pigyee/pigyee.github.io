@@ -16,9 +16,14 @@
     </script>
     <script src="/view-image.min (1).js"></script>
     <script>
-        window.ViewImage && ViewImage.init('.img-fluid');
+        window.ViewImage && ViewImage.init('.mx-auto d-block rounded');
     </script>
     <style>
+        :root {
+            --waline-theme-color: #0d6efd !important;
+            --waline-active-color: #0d6efd !important;
+        }
+
         .searchResults li {
             list-style-type: none;
         }
@@ -100,6 +105,7 @@
             </div>
         </div>
         <hr>
+        <h1>注意：日出二级域名好像挂了，请用别的二级域名分发</h1>
         <h3>前言</h3>
         <p>有一个一个一个问我怎么建网站，今天特地写一篇给大家介绍，不需要马内和服务器，需要脑子和手</p>
         <h3>准备</h3>
@@ -108,7 +114,7 @@
         <p>注意:github.com有时在国内被墙，打不开请用VPN。在github创建一个公共仓库，
         <pre>
           <code class="rounded border border-2 language-html">      
-               &lt;!doctype html&gt;
+               &lt;!DOCTYPE html&gt;
                &lt;html lang="zh-CN"&gt;
                  &lt;head&gt;               
                    &lt;meta charset="utf-8"&gt;
@@ -121,10 +127,64 @@
           </code>
         </pre>
         把这段代码上传进去，文件名是<kbd>index.html</kbd>提交</p>
-        <h3>用4everland托管网页</h3>
-        <p>4everland是一个免费的静态网页托管平台，可以
-            <!--评论系统-->
-            <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
+        <h3>用4everland托管网页<a href="https://4everland.org/">4everland首页</a></h3>
+        <p>4everland是一个免费的静态网页托管平台，网页就在这上面跑，能够自动部署</p>
+        <p>先打开4everland，点</p>
+        <img class="mx-auto d-block" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/1.jpg" alt="1.jpg" border="0">
+        <p>连接github，以便部署刚才的html页面</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/2.jpg" alt="2.jpg" border="0">
+        <p>点击后会跳转到github，登录</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/3.jpg" alt="3.jpg" border="0">
+        <br>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/4.jpg" alt="4.jpg" border="0">
+        <p>登录完成后会跳转到4everland</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/5.jpg" alt="5.jpg" border="0">
+        <p>关掉弹窗</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/6.jpg" alt="6.jpg" border="0">
+        <p>点三条横杠</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/7.jpg" alt="7.jpg" border="0">
+        <p>点托管（hosting）</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/8.jpg" alt="8.jpg" border="0">
+        <p>新建一个项目</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/9.jpg" alt="9.jpg" border="0">
+        <p>现在就能看到github的仓库了，选github创建的有HTML源码的仓库</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/10.jpg" alt="10.jpg" border="0">
+        <p>划到最底下，开始部署</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/11.jpg" alt="11.jpg" border="0">
+        <p>等待部署完成，部署完成后会显示一个弹窗，点外面</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/12.jpg" alt="12.jpg" border="0">
+        <p>可以看到刚才部署的项目</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/13.jpg" alt="13.jpg" border="0">
+        <p>点下面的小齿轮</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/14.jpg" alt="14.jpg" border="0">
+        <p>点domain，配置自定义域名</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/15.jpg" alt="15.jpg" border="0">
+        <p>在这里输上以 <kbd>这里随便写.ds666.top</kbd>格式的域名</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/16.jpg" alt="16.jpg" border="0">
+        <p>复制记录值</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/17.jpg" alt="17.jpg" border="0">
+        <h3>配置域名<a href="https://dns.rnmcnm.com/">域名注册网站</a></h3>
+        <p>注册一个账号</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/19.jpg" alt="19.jpg" border="0">
+        <p>注册之后会向邮箱发送邮件，在收件箱里点击认证，认证后登录</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/20.jpg" alt="20.jpg" border="0">
+        <p>添加一个解析</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/21.jpg" alt="21.jpg" border="0">
+        <p>后缀选<kbd>ds666.top</kbd></p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/22.jpg" alt="22.jpg" border="0">
+        <p>前缀自己写一个喜欢的</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/23.jpg" alt="23.jpg" border="0">
+        <p>记录类型选CNAME</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/24.jpg" alt="24.jpg" border="0">
+        <p>填入刚才在4everland复制的的记录值</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/25.jpg" alt="25.jpg" border="0">
+        <p>确定</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/26.jpg" alt="26.jpg" border="0">
+        <p>去4everland刷新一下域名，显示有效配置后就可以用刚才在<a href="https://dns.rnmcnm.com/">dns.rnmcnm.com</a>注册的域名访问了</p>
+        <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/18.jpg" alt="18.jpg" border="0">
+        <p>4everland自带cdn，速度很快</p>
+        <!--评论系统-->
+        <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
         <div id="waline"></div>
         <script type="module">
             import {
