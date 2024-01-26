@@ -10,7 +10,6 @@
     <meta name="description" content="小猪的博客-邮箱：pig810@outlook.com">
     <script src="/dark.js"></script>
     <script src="/view-image.min (1).js"></script>
-    <script src="https://cdn.staticfile.org/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
     <script>
         window.ViewImage && ViewImage.init('.img-fluid');
     </script>
@@ -23,6 +22,28 @@
 
         .tab-content {
             margin: 30px;
+        }
+
+        .searchResults li {
+            list-style-type: none;
+        }
+
+        .searchResults {
+            position: absolute;
+            top: 60px;
+            /* 调整弹窗的垂直位置 */
+            left: 10px;
+            /* z-index: 999; /* 确保弹窗在最上层 */
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            position: sticky;
+            z-index: 1111;
         }
     </style>
 </head>
