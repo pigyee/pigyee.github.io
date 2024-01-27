@@ -1,0 +1,16 @@
+        .searchResults li {
+            list-style-type: none;
+        }
+
+        .searchResults {
+            position: absolute;                                  
+            background-color: white;
+            border: 1px solid #ccc;           
+            display: none;
+        }
+
+        .navbar {
+            backdrop-filter: blur(10px);
+            position: sticky;
+            z-index: 1111;
+        }

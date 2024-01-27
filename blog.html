@@ -13,6 +13,7 @@
     <script>
         window.ViewImage && ViewImage.init('.img-fluid');
     </script>
+    <link rel="stylesheet" href="/index2.css">
     <style>
         .p {
             border-left: 9px solid #4169E1;
@@ -22,28 +23,6 @@
 
         .tab-content {
             margin: 30px;
-        }
-
-        .searchResults li {
-            list-style-type: none;
-        }
-
-        .searchResults {
-            position: absolute;
-            top: 60px;
-            /* 调整弹窗的垂直位置 */
-            left: 10px;
-            /* z-index: 999; /* 确保弹窗在最上层 */
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            display: none;
-        }
-
-        .navbar {
-            backdrop-filter: blur(10px);
-            position: sticky;
-            z-index: 1111;
         }
     </style>
 </head>
@@ -99,10 +78,8 @@
     </div>
     <!--回到顶部-->
     <div class="fixed-bottom">
-        <a href="#" class="btn btn-primary bth-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewbox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
-            </svg>
+        <a href="#" class="btn btn-primary bth-sm m-2">
+            <i class="bi bi-arrow-bar-up"></i>
         </a>
     </div>
     <!--全部-->
@@ -415,14 +392,14 @@
     <div class="mt-5 p-4 bg-dark text-white text-center">
         <span id="runtime_span"></span>
         <script src="/time.js"></script>
-        <img src="/logo-m.svg" alt="icon" border="0">
-        <h4>由4EVERLAND托管</h4>
+        <br>
+        <a href="https://stats.uptimerobot.com/xE8LGHmDxB">网站监测</a>
         <p>能启猪负责运营</p>
         <div class="btn-group">
             <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
                 <i class="bi bi-diagram-2"></i>
             </a>
-            <a href="https://www.lkdns.top" class="btn btn-primary">域名由灵空提供
+            <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供
                 <i class="bi bi-globe"></i>
             </a>
         </div>
