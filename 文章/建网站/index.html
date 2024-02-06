@@ -16,7 +16,7 @@
     </script>
     <script src="/view-image.min (1).js"></script>
     <script>
-        window.ViewImage && ViewImage.init('.mx-auto d-block rounded');
+        window.ViewImage && ViewImage.init('.mx-auto');
     </script>
     <link rel="stylesheet" href="/index.css">
 </head>
@@ -130,18 +130,18 @@
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/14.jpg" alt="14.jpg" border="0">
         <p>点domain，配置自定义域名</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/15.jpg" alt="15.jpg" border="0">
-        <p>在这里输上以 <kbd>这里随便写.ds666.top</kbd>格式的域名</p>
+        <p>在这里输上申请的二级域名<a href="#domain">域名申请教程点这里</a></p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/16.jpg" alt="16.jpg" border="0">
         <p>复制记录值</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/17.jpg" alt="17.jpg" border="0">
-        <h3>配置域名<a href="https://dns.rnmcnm.com/">域名注册网站</a></h3>
+        <h3 id="domain">配置域名<a href="https://dns.rnmcnm.com/">域名注册网站</a></h3>
         <p>注册一个账号</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/19.jpg" alt="19.jpg" border="0">
         <p>注册之后会向邮箱发送邮件，在收件箱里点击认证，认证后登录</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/20.jpg" alt="20.jpg" border="0">
         <p>添加一个解析</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/21.jpg" alt="21.jpg" border="0">
-        <p>后缀选<kbd>ds666.top</kbd></p>
+        <p>后缀选自己喜欢的，这里选的是<kbd>ds666.top</kbd></p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/22.jpg" alt="22.jpg" border="0">
         <p>前缀自己写一个喜欢的</p>
         <img class="mx-auto d-block rounded" height="50%" width="50%" src="https://cdnjson.com/images/2024/01/17/23.jpg" alt="23.jpg" border="0">
@@ -179,25 +179,7 @@
     </div>
     <!--页脚-->
     <div class="mt-5 p-4 bg-dark text-white text-center"><span id="runtime_span"></span>
-        <script type="text/javascript">
-            function show_runtime() {
-                window.setTimeout("show_runtime()", 1000);
-                X = new
-                Date("6/5/2023 0:00:00");
-                Y = new Date();
-                T = (Y.getTime() - X.getTime());
-                M = 24 * 60 * 60 * 1000;
-                a = T / M;
-                A = Math.floor(a);
-                b = (a - A) * 24;
-                B = Math.floor(b);
-                c = (b - B) * 60;
-                C = Math.floor((b - B) * 60);
-                D = Math.floor((c - C) * 60);
-                runtime_span.innerHTML = "本站勉强运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
-            }
-            show_runtime();
-        </script>
+        <script type="text/javascript" src="/time.js"></script>
         <img src="/logo-m.svg" alt="icon.png" border="0">
         <h4>由4EVERLAND托管</h4>
         <p>能启猪负责运营</p>
