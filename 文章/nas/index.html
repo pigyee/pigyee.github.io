@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <title>建网站:猪圈-能启猪运营</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.staticfile.org/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="/dark.js"></script>
+    <script src="/view-image.min (1).js"></script>
+    <script>
+        window.ViewImage && ViewImage.init('.mx-auto');
+    </script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <!--导航栏-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container-fluid d-flex"><a class="navbar-brand" href="#">
+                <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&amp;小游戏</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
+                    <form>
+                        <input class="form-control" type="text" id="searchInput" placeholder="搜索">
+                    </form>
+                    <!-- 搜索结果 -->
+                    <br>
+                    <ul class="searchResults bg-light rounded">
+                        <!-- 搜索结果将会动态加载到这里 -->
+                    </ul>
+                    <!-- JavaScript 代码 -->
+                    <script src="/search.js"></script>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--回到顶部-->
+    <div class="fixed-bottom">
+        <a href="#" class="btn btn-primary bth-sm m-2">
+            <i class="bi bi-arrow-bar-up"></i>
+        </a>
+    </div>
+    <!--标题-->
+    <div class="m-2">
+        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded text-center row">
+            <div class="col-md">
+                <h1 class="display-1">把移动送的魔百盒魔改成nas</h1><br>
+            </div>
+            <div class="col-md">
+                <div class="container">
+                    <time>2024.1.17</time>
+                    <div id="article-info">
+                        阅读量: <span class="waline-pageview-count" data-path="<Your/Path/Name>"></span>
+                    </div>
+                </div>
+                <br>
+                <img class="d-none d-lg-block mx-auto d-block" width="30%" height="auto" src="https://cdnjson.com/images/2024/02/19/sketch1708327122557_1b0d3ba93a6b4151b.png" alt="sketch1708327122557_1b0d3ba93a6b4151b.png" border="0" />
+                <div class="p-2 bg-primary text-white rounded col-sm">
+                    <p>魔百盒，不只是电视。下次教大家用魔百盒+内网穿透搭网站</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2>前提条件</h2>
+        <p>盒子需要安装第三方软件，不刷机安装第三方软件可以看这篇教程<a href="https://www.znds.com/tv-1228777-1-1.html">co↑co↓</a>如果没有可以用的方法，可以刷机或者连接TTL。<strong>杀鸡有风险，刷机需谨慎</strong></p>
+        <h2>下载ksweb</h2>
+        <p>ksweb内置了FTP服务器，Web Interface可以在浏览器里管理ksweb的设置。前三个事服务器软件，跑网页的</p>
+        <ul>
+            <li>lighttpd server</li>
+            <li>nginx</li>
+            <li>Apache</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>msmtp</li>
+            <li>Web Interface</li>
+            <li><strong>KSWEBFTP</strong></li>
+            <li>Editor</li>
+            <li>Scheduler</li>
+        </ul>
+        <p><a href="http://down.56ads.com/downsoft/kswebpro_v3.971_xfdown.com.apk">下载链接</a>按照前提条件里提到的安装第三方软件的方法安装ksweb，有的盒子是静默安装，有的盒子会提示，安装即可。</p>
+        <h2>配置ksweb</h2>
+        <p>如果遥控器操作不方便，可以连接USB鼠标或无线鼠标，这里用平板电脑演示</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_142413_ru.kslabs.ksweb1d34dcd9513a6146.jpg" alt="Screenshot_20240219_142413_ru.kslabs.ksweb1d34dcd9513a6146.jpg" border="0" />
+        <p>打开之后差不多是这样的，把不用的服务都关掉，只留FTP</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_143008_ru.kslabs.ksweb_15c7ccfe2235c2df2.jpg" alt="Screenshot_20240219_143008_ru.kslabs.ksweb_15c7ccfe2235c2df2.jpg" border="0" />
+        <p>点开ftp的选项，其他的不用管点下面的加号，添加一位用户</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_143725_ru.kslabs.kswebc6889309458a375b.jpg" alt="Screenshot_20240219_143725_ru.kslabs.kswebc6889309458a375b.jpg" border="0" />
+        <p>用户名密码随便填，下面的允许修改文件勾上。如果插了U盘，把密码下面的储存位置改成u盘位置，可以节省盒子空间，把文件存到u盘上</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_143943_ru.kslabs.ksweb0ca57550c71bf46b.jpg" alt="Screenshot_20240219_143943_ru.kslabs.ksweb0ca57550c71bf46b.jpg" border="0" />
+        <p>已经快完成了，还差最后一步</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_144315_ru.kslabs.ksweb_1b05615d1674d0f7d.jpg" alt="Screenshot_20240219_144315_ru.kslabs.ksweb_1b05615d1674d0f7d.jpg" border="0" />
+        <p>按图片操作，在盒子启动时就可以自动启动ksweb</p>
+        <h2>连接FTP服务</h2>
+        <p>恭喜，服务端已经配置完成了，用文件管理器连接盒子即可</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">连接要填的</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">协议</th>
+                    <td>FTP</td>
+                </tr>
+                <tr>
+                    <th scope="row">服务器地址</th>
+                    <td>从路由器管理页面查看或者在盒子网络设置页面查看</td>
+                </tr>
+                <tr>
+                    <th scope="row">端口</th>
+                    <td>默认为2121</td>
+                </tr>
+                <tr>
+                    <th scope="row">路径</th>
+                    <td>不填</td>
+                </tr>
+                <tr>
+                    <th scope="row">服务器地址</th>
+                    <td>从路由器管理页面查看或者在盒子网络设置页面查看</td>
+                </tr>
+                <tr>
+                    <th scope="row">用户名密码</th>
+                    <td>在ksweb上填的</td>
+                </tr>
+                <tr>
+                    <th scope="row">编码</th>
+                    <td>UTF-8</td>
+                </tr>
+                <tr>
+                    <th scope="row">传输模式</th>
+                    <td>被动</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>效果</p>
+        <p>速度飕飕的，像过山车一样</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_150447_pl.solidexplorer2fe99bb7355e3bc65.jpg" alt="Screenshot_20240219_150447_pl.solidexplorer2fe99bb7355e3bc65.jpg" border="0">
+        <p>适合存最新的电影，文件管理器是solidexplorer</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/19/Screenshot_20240219_145052_pl.solidexplorer2af18398b0cd4d5ce.jpg" alt="Screenshot_20240219_145052_pl.solidexplorer2af18398b0cd4d5ce.jpg" border="0">
+        <!--评论系统-->
+        <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
+        <div id="waline"></div>
+        <script type="module">
+            import {
+                init
+            } from 'https://npm.onmicrosoft.cn/@waline/client@v2/dist/waline.mjs';
+
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-1-i3324437.deta.app/',
+                reaction: true,
+                reaction: [
+                    'https://cdnjson.com/images/2023/11/26/-a40hq-bup06.png',
+                    'https://cdnjson.com/images/2023/11/26/-azzz0-v6yi5.png',
+                    'https://cdnjson.com/images/2023/11/26/-a7lfz-jjocw.png',
+                ],
+                dark: 'auto',
+                pageview: true,
+            });
+        </script>
+    </div>
+    <!--页脚-->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <span id="runtime_span"></span>
+        <script src="/time.js"></script>
+        <br>
+        <a href="https://stats.uptimerobot.com/xE8LGHmDxB">网站监测</a>
+        <p>pig810负责运营</p>
+        <div class="btn-group">
+            <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
+                <i class="bi bi-diagram-2"></i>
+            </a>
+            <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供
+                <i class="bi bi-globe"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
