@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <title>ksweb网站:猪圈-pig810运营</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.staticfile.org/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="/dark.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="/view-image.min (1).js"></script>
+    <script>
+        window.ViewImage && ViewImage.init('.mx-auto');
+    </script>
+    <link rel="stylesheet" href="/index.css">
+    <script>
+      hljs.highlightAll();
+    </script>
+</head>
+
+<body>
+    <!--导航栏-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container-fluid d-flex"><a class="navbar-brand" href="#">
+                <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&amp;小游戏</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
+                    <form>
+                        <input class="form-control" type="text" id="searchInput" placeholder="搜索">
+                    </form>
+                    <!-- 搜索结果 -->
+                    <br>
+                    <ul class="searchResults bg-light rounded">
+                        <!-- 搜索结果将会动态加载到这里 -->
+                    </ul>
+                    <!-- JavaScript 代码 -->
+                    <script src="/search.js"></script>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--回到顶部-->
+    <div class="fixed-bottom">
+        <a href="#" class="btn btn-primary bth-sm m-2">
+            <i class="bi bi-arrow-bar-up"></i>
+        </a>
+    </div>
+    <!--标题-->
+    <div class="m-2">
+        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded text-center row">
+            <div class="col-md">
+                <h1 class="display-1">ksweb+魔百盒+内网穿透建网站</h1><br>
+            </div>
+            <div class="col-md">
+                <div class="container">
+                    <time>2024.1.21</time>
+                    <div id="article-info">
+                        阅读量: <span class="waline-pageview-count" data-path="<Your/Path/Name>"></span>
+                    </div>
+                </div>
+                <br>
+                <img class="d-none d-lg-block mx-auto d-block" width="30%" height="auto" src="https://cdnjson.com/images/2024/02/19/sketch1708327122557_1b0d3ba93a6b4151b.png" alt="sketch1708327122557_1b0d3ba93a6b4151b.png" border="0" />
+                <div class="p-2 bg-primary text-white rounded col-sm">
+                    <p>ksweb+魔百盒+内网穿透搭网站</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+            <del class="display-2">上期回顾</del>
+            <h2>前提条件</h2>
+            <p>盒子需要安装第三方软件，不刷机安装第三方软件可以看这篇教程<a href="https://www.znds.com/tv-1228777-1-1.html">co↑co↓</a>如果没有可以用的方法，可以刷机或者连接TTL。<strong>杀鸡有风险，刷机需谨慎</strong></p>
+            <h2>下载ksweb</h2>
+            <p>ksweb内置了http服务器，Web Interface可以在浏览器里管理ksweb的设置。前三个事服务器软件，跑网页的</p>
+            <ul>
+                <li><strong>lighttpd server ←主角</strong></li>
+                <li>nginx</li>
+                <li>Apache</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>msmtp</li>
+                <li>Web Interface</li>
+                <li>KSWEBFTP</li>
+                <li>Editor</li>
+                <li>Scheduler</li>
+            </ul>
+            <p><a href="http://down.56ads.com/downsoft/kswebpro_v3.971_xfdown.com.apk">下载链接</a>按照前提条件里提到的安装第三方软件的方法安装ksweb，有的盒子是静默安装，有的盒子会提示，安装即可。</p>
+        </div>
+        <h2>配置ksweb</h2>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134613_ru.kslabs.ksweb8bff4caa07362e58.jpg" alt="Screenshot_20240221_134613_ru.kslabs.ksweb8bff4caa07362e58.jpg" border="0" />
+        <p>打开lighttpd选项，点下面的+号，弹出这个页面，其他不用管，把启用https勾上，点最下面一行的文件夹，选择SSL证书（这里不说了，自己搜怎么获得SSL证书）</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134036_ru.kslabs.ksweb_13a22336d1bde2132.jpg" alt="Screenshot_20240221_134036_ru.kslabs.ksweb_13a22336d1bde2132.jpg" border="0" />
+        <p>可以看到有两个主机，一个是http主机，一个是https主机，点一下下面的https主机，选择编辑配置文件（忘截图了）</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_133244_ru.kslabs.ksweb_102c377e37ceaffbd.jpg" alt="Screenshot_20240221_133244_ru.kslabs.ksweb_102c377e37ceaffbd.jpg" border="0">
+        <p>打开之后差不多是这样的，红圈里的#删掉（取消注释），蓝线画的改成ca证书的路径，
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_132934_ru.kslabs.ksweb1a274c93f246b6d3.jpg" alt="Screenshot_20240221_132934_ru.kslabs.ksweb1a274c93f246b6d3.jpg" border="0">
+        <p>不要照抄，不一样，点上面的保存，再退出</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134909_ru.kslabs.ksweb_1b58ac7b8149204e1.jpg" alt="Screenshot_20240221_134909_ru.kslabs.ksweb_1b58ac7b8149204e1.jpg" border="0" />
+        <p>编辑配置文件，注意不是刚才那个</p>
+        <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134916_ru.kslabs.ksweb_12962276eb922c06a.jpg" alt="Screenshot_20240221_134916_ru.kslabs.ksweb_12962276eb922c06a.jpg" border="0" />
+        <p>把这段东西扔进去，实现http重定向https，把<code>example.org</code>换成自己的域名，（注册一个，二级域名也行，网上一搜一大把）保存，退出。把<code>80</code>换成http主机的端口</p>
+        <pre>
+          <code class="rounded border border-2">      
+            $SERVER["socket"] == ":80" {  
+                    $HTTP["host"] =~ "example.org" {  
+                    url.redirect = ( "^/(.*)" => "https://example.org/$1" )  
+                    server.name                 = "example.org"   
+                  }  
+            }
+          </code>
+        </pre>
+        <!--评论系统-->
+        <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
+        <div id="waline"></div>
+        <script type="module">
+            import {
+                init
+            } from 'https://npm.onmicrosoft.cn/@waline/client@v2/dist/waline.mjs';
+
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-1-i3324437.deta.app/',
+                reaction: true,
+                reaction: [
+                    'https://cdnjson.com/images/2023/11/26/-a40hq-bup06.png',
+                    'https://cdnjson.com/images/2023/11/26/-azzz0-v6yi5.png',
+                    'https://cdnjson.com/images/2023/11/26/-a7lfz-jjocw.png',
+                ],
+                dark: 'auto',
+                pageview: true,
+            });
+        </script>
+    </div>
+    <!--页脚-->
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <span id="runtime_span"></span>
+        <script src="/time.js"></script>
+        <br>
+        <a href="https://stats.uptimerobot.com/xE8LGHmDxB">网站监测</a>
+        <p>pig810负责运营</p>
+        <div class="btn-group">
+            <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
+                <i class="bi bi-diagram-2"></i>
+            </a>
+            <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供
+                <i class="bi bi-globe"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
