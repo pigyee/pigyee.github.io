@@ -109,7 +109,7 @@
         <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_132934_ru.kslabs.ksweb1a274c93f246b6d3.jpg" alt="Screenshot_20240221_132934_ru.kslabs.ksweb1a274c93f246b6d3.jpg" border="0">
         <p>不要照抄，不一样，点上面的保存，再退出</p>
         <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134909_ru.kslabs.ksweb_1b58ac7b8149204e1.jpg" alt="Screenshot_20240221_134909_ru.kslabs.ksweb_1b58ac7b8149204e1.jpg" border="0" />
-        <p>编辑配置文件，注意不是刚才那个</p>
+        <p>编辑配置文件，注意不是刚才那个，是http端口</p>
         <img class="mx-auto d-block" width="50%" height="50%" src="https://cdnjson.com/images/2024/02/21/Screenshot_20240221_134916_ru.kslabs.ksweb_12962276eb922c06a.jpg" alt="Screenshot_20240221_134916_ru.kslabs.ksweb_12962276eb922c06a.jpg" border="0" />
         <p>把这段东西扔进去，实现http重定向https，把<code>example.org</code>换成自己的域名，（注册一个，二级域名也行，网上一搜一大把）保存，退出。把<code>80</code>换成http主机的端口</p>
         <pre>
@@ -122,6 +122,14 @@
             }
           </code>
         </pre>
+        <h2>配置内网穿透</h2>
+        <p>要外网访问的话，需要内网穿透到外网(无公网ip，大部分都没有)下面是三个内网穿透映射网站，随便选一个,创建隧道(moeeyfrp不用创建的)，下载frp安卓版(安卓4.4似乎不能使用最新版）<a href="https://github.com/mainfunx/frpc_android/releases">下载frp_android</a>，或使用termux跑linuxarm版frp,把配置文件复制进去。注意,http端口和https端口都要穿透,不要使用中国大陆穿透服务器,需要备案,记得绑定域名</p>       
+      <ul class="shadow-sm p-3 bg-body-tertiary rounded">
+        <li><a href="https://muhanfrp.cn">木韩内网穿透</a></li>
+        <li><a href="https://openfrp.net">openfrp</a></li>
+        <li><a href="https://moeyy.cn/frp/">moeeyfrp</a>推荐</li>
+      </ul>
+        
         <!--评论系统-->
         <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
         <div id="waline"></div>
