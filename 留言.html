@@ -6,42 +6,8 @@
 </head>
 
 <body>
-    <!--导航栏-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
-        <div class="container-fluid d-flex"><a class="navbar-brand" href="#">
-                <img src="https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top"> 猪圈
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/下载.html">下载</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/留言.html">留言</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/blog.html">文章</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/表情包">表情包</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/小玩意导航页.html">小工具&amp;小游戏</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/关于">关于</a></li>
-                    <form>
-                        <input class="form-control" type="text" id="searchInput" placeholder="搜索">
-                    </form>
-                    <!-- 搜索结果 -->
-                    <br>
-                    <ul class="searchResults rounded shadow">
-                        <!-- 搜索结果将会动态加载到这里 -->
-                    </ul>
-                    <!-- JavaScript 代码 -->
-                    <script src="/search.js"></script>
-                </ul>
-            </div>
-        </div>
-    </nav>
-       <!--回到顶部-->
-    <div class="fixed-bottom">
-        <a href="#" class="btn btn-primary bth-sm m-2">
-            <i class="bi bi-arrow-bar-up"></i>
-        </a>
-    </div>
+    <meta charset="utf-8"/>
+    <script src="/js/navbar.js"></script>
     <h1>留言</h1>
     <!--评论系统-->
     <link href="https://cdn.staticfile.org/waline/2.15.8/waline.min.css" rel="stylesheet">
@@ -60,22 +26,7 @@
     </script>
     <br>
     <br>
-    <!--页脚-->
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-        <span id="runtime_span"></span>
-        <script src="/time.js"></script>
-        <br>
-        <a href="https://stats.uptimerobot.com/xE8LGHmDxB">网站监测</a>
-        <p>pig810负责运营</p>
-        <div class="btn-group">
-            <a href="/sitemap.xml" class="btn btn-warning">网站地图查看
-                <i class="bi bi-diagram-2"></i>
-            </a>
-            <a href="https://dns.rnmcnm.com" class="btn btn-primary">域名由日出提供
-                <i class="bi bi-globe"></i>
-            </a>
-        </div>
-    </div>
+    <script src="/js/footer.js"></script>
 </body>
 
 </html>
