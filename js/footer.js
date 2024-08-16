@@ -1,0 +1,16 @@
+document.writeln("<!--页脚-->");
+document.writeln("    <footer class=\'mt-5 p-4 bg-dark text-white text-center\'>");
+document.writeln("        <span id=\'runtime_span\'></span>");
+document.writeln("         <script src=\'/js/time.js\'></script>");
+document.writeln("        <br>");
+document.writeln("        <a href=\'https://stats.uptimerobot.com/xE8LGHmDxB\'>网站监测</a>");
+document.writeln("        <p>pig810负责运营</p>");
+document.writeln("        <div class=\'btn-group\'>");
+document.writeln("            <a href=\'/sitemap.xml\' class=\'btn btn-warning\'>网站地图查看");
+document.writeln("                <i class=\'bi bi-diagram-2\'></i>");
+document.writeln("            </a>");
+document.writeln("            <a href=\'https://dns.rnmcnm.com\' class=\'btn btn-primary\'>域名由日出提供");
+document.writeln("                <i class=\'bi bi-globe\'></i>");
+document.writeln("            </a>");
+document.writeln("        </div>");
+document.writeln("    </footer>");
