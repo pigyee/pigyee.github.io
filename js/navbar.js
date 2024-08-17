@@ -1,7 +1,7 @@
 document.writeln("<!-- 导航栏 -->");
 document.writeln("    <nav class=\'navbar navbar-expand-lg navbar-light sticky-top shadow-sm\'>");
 document.writeln("        <div class=\'container-fluid d-flex\'><a class=\'navbar-brand\' href=\'#\'>");
-document.writeln("                <img src=\'https://cdnjson.com/images/2023/10/28/212239qsGyuK1o4RRFyM4E.png\' alt=\'Logo\' width=\'30\' height=\'40\' class=\'d-inline-block align-text-top\'> 猪圈");
+document.writeln("                <img src=\'https://s2.loli.net/2024/08/17/XpbJR5srEQ8B34i.png\' alt=\'Logo\' width=\'30\' height=\'40\' class=\'d-inline-block align-text-top\'> 猪圈");
 document.writeln("            </a>");
 document.writeln("            <button class=\'navbar-toggler\' type=\'button\' data-bs-toggle=\'collapse\' data-bs-target=\'#navbarNav\' aria-controls=\'navbarNav\' aria-expanded=\'false\' aria-label=\'Toggle navigation\'>");
 document.writeln("                <span class=\'navbar-toggler-icon\'></span> </button>");
