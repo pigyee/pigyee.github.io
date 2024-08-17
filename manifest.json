@@ -1,0 +1,10 @@
+{
+  "name": "猪圈",
+  "icons": [
+    {
+      "src": "icons/favicon.ico",
+      "type": "image/ico",
+      "sizes": "512x512"
+    }
+  ]
+}

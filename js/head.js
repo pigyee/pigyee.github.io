@@ -4,6 +4,7 @@ document.writeln("    <link href=\'https://cdn.staticfile.net/twitter-bootstrap/
 document.writeln("    <script src=\'https://cdn.staticfile.net/twitter-bootstrap/5.3.2/js/bootstrap.min.js\'></script>");
 document.writeln("    <link href=\'https://cdn.staticfile.net/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css\' rel=\'stylesheet\'>");
 document.writeln("    <script src=\'/js/dark.js\'></script>");
+document.writeln("    <link rel=\'manifest\' href=\'/manifest.json\' />");
 document.writeln("    <!-- 灯箱脚本 -->");
 document.writeln("    <script src=\'/js/view-image.min (1).js\'></script>");
 document.writeln("    <script>");
