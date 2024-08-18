@@ -2,8 +2,8 @@
   "name": "猪圈",
   "icons": [
     {
-      "src": "icons/favicon.ico",
-      "type": "image/ico",
+      "src": "icons/logo.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ]
