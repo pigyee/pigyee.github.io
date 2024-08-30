@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>首页:猪圈-pig810运营</title>
+    <script src="/js/head.js"></script>
+    <script>
+        function rvcallback() {
+            document.getElementById("subm").removeAttribute("disabled")
+        }
+    </script>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body>
+   <!-- 导航栏 -->
+    <meta charset="utf-8"/>
+    <script src="/js/navbar.js"></script>
+    <div id="login">
+      <h1>captcha</h1>
+      <form>
+        <button class="btn btn-primary" id="subm" type="submit" disabled="disabled">下一个</button>
+      </form><br/>
+    <div class="h-captcha" data-sitekey="0f86ff42-53c0-4be2-a272-f7decec0c8dc" data-callback="rvcallback"></div>
+   </div>
+</body>
+</html>
