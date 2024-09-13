@@ -10,7 +10,7 @@
 }
 
 .navbar {
-    opacity: 1.0;
+    backdrop-filter: blur(20px);
     position: sticky;
     z-index: 1111;
 }
