@@ -13,7 +13,7 @@
              return;
          }
 
-         fetch('/search.xml')
+         fetch('https://nqh.cloudns.be/search.xml')
              .then(response => response.text())
              .then(data => {
                  const parser = new DOMParser();
