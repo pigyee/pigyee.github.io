@@ -5,11 +5,9 @@
     <title>captcha:猪圈-pig810运营</title>
     <script src="/js/head.js"></script>
     <script>
-        function rvcallback() {
-            document.getElementById("subm").removeAttribute("disabled")
-        }
+      document.getElementById("subm").removeAttribute("disabled")
     </script>
-    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://hcaptcha.com/1/api.js"></script>
      <script>
         // 获取按钮和计数器元素
         var countBtn = document.getElementById("subm");
@@ -34,7 +32,7 @@
     <script src="/js/navbar.js"></script>
       <form>
         <h2 id="counttext">0</h2>
-        <button class="btn btn-primary" id="subm" type="submit" disabled="disabled">下一个</button>
+        <button class="btn btn-primary" id="subm" disabled="disabled">下一个</button>
       </form><br/>
     <div class="h-captcha" data-sitekey="0f86ff42-53c0-4be2-a272-f7decec0c8dc" data-callback="rvcallback"></div>
    </div>
