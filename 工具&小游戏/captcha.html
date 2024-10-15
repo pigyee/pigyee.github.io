@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>首页:猪圈-pig810运营</title>
+    <title>captcha:猪圈-pig810运营</title>
     <script src="/js/head.js"></script>
     <script>
         function rvcallback() {
@@ -10,13 +10,30 @@
         }
     </script>
     <script src="https://hcaptcha.com/1/api.js" async defer></script>
+     <script>
+        // 获取按钮和计数器元素
+        var countBtn = document.getElementById("subm");
+        var countText = document.getElementById("counttext");
+
+        // 初始化计数为0
+        var count = 0;
+
+        // 设置按钮点击事件监听器
+        countBtn.addEventListener("click", function() {
+            // 每次点击计数器加1
+            count++;
+
+            // 更新计数器文本
+            countText.textContent = "按钮点击次数：" + count;
+        });
+    </script>
 </head>
 <body>
    <!-- 导航栏 -->
     <meta charset="utf-8"/>
     <script src="/js/navbar.js"></script>
-    <div id="login">
       <form>
+        <h2 id="counttext">0</h2>
         <button class="btn btn-primary" id="subm" type="submit" disabled="disabled">下一个</button>
       </form><br/>
     <div class="h-captcha" data-sitekey="0f86ff42-53c0-4be2-a272-f7decec0c8dc" data-callback="rvcallback"></div>
