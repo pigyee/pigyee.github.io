@@ -9,7 +9,7 @@ document.writeln("        <div class=\'btn-group\'>");
 document.writeln("            <a href=\'/sitemap.xml\' class=\'btn btn-warning\'>网站地图查看");
 document.writeln("                <i class=\'bi bi-diagram-2\'></i>");
 document.writeln("            </a>");
-document.writeln("            <a href=\'https://cloudns.net\' class=\'btn btn-primary\'>域名由cloudns提供");
+document.writeln("            <a href=\'https://nic.us.kg)\' class=\'btn btn-primary\'>域名由us.kg提供");
 document.writeln("                <i class=\'bi bi-globe\'></i>");
 document.writeln("            </a>");
 document.writeln("        </div>");
